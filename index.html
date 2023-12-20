@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post to MongoDB</title>
 </head>
-
 <body>
-  <form method="post" action="input_db.php">
-        <label for="message-to">Message To:</label>
-        <input type="text" id="message-to" name="message-to" required>
-        <button type="submit">Register</button>
-  </form>
-  
-  <script src="script.js"></script>
+    <h1>Post Data to MongoDB</h1>
+    <form action="insert_data.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="message">Email:</label>
+        <input type="text" id="message" name="message" required>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
 </body>
-
 </html>
